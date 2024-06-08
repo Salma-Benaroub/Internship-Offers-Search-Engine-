@@ -1,0 +1,225 @@
+:root{
+    --PrimaryColor: hsl(199,100%,33%);
+    --SecondaryColor: hsl(187,85%,43%);
+    --gradientColor: linear-gradient(to right, hsl(199, 100%, 33%), hsl(187, 85%, 43%));
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(201,33%,16%);
+    --textColor:hsl(240,4%,36%);
+    --whiteColorDeam:hsl(0,0%,93%);;
+    --greyText:rgb(190,190,190);
+    --inputColor:rgb(239,239,239);
+    --bodyColor:rgb(240,240,246);
+    --cardBG:rgb(225,225,235);
+
+}
+
+.homee{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    min-height: 100vh;
+
+
+    .overlay{
+        position: obsolute;
+        height: 100%;
+        width: 100%;
+        background:rgb(182, 171, 105);
+        top: 0;
+        bottom: 0;
+        z-index: 1;
+        mix-blend-mode: hard-light;
+    
+    
+    }
+
+    video{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        bottom: 0px;
+        object-fit: cover;
+    
+    }
+    .description{
+        color: var(--whiteColor);
+    }
+
+    .homeContent{
+        width: 100%;
+        height: max-content;
+        padding: 8rem 1.5rem 3rem;
+        display: flex;
+        row-gap: 2rem;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        margin: 0; 
+        color: var(--textColor);
+        z-index: 100;
+        
+    }
+
+    .textDiv{
+        padding: 2rem 0;
+        .homeTitle{
+            position: relative;
+            margin-top: 50px;
+            font-size: 2rem;
+          
+        }}
+    
+.cardDiv{
+    position: relative;
+    background: var(--whiteColor);
+    border-radius: 10px;
+    gap: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+
+
+    label{
+        display: block;
+        color: var(--textColor);
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+    .input{
+        height: 40px;
+        padding: 0 1rem;
+        background: var(--inputColor);
+        border-radius: 3rem;
+
+        input{
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            font-size: 13px;
+            font-weight: 500;
+            &::placeholder{
+                font-size: 13px;
+        }  
+    }
+
+    .icon{
+        font-size: 18px;
+        color: var(--PrimaryColor)
+        !important;
+        margin-left: 10px;
+    }
+}
+    .searchOptions{
+        position: absolute;
+        background: var(--gradientColor);
+        color: var(--whiteColor);
+        width: max-content;
+        bottom: -0.7rem;
+        column-gap: .8rem;
+        padding: 5px 1rem;
+        border-radius: 3rem;
+        left: 50%;
+        transform: translate(-50%);
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover{
+            background: var(--PrimaryColor);
+        }
+
+        .icon{
+            font-size: 18px;
+        }
+
+        span{
+            font-size: 13px;
+    }}}
+ 
+
+.homeFoorterIcon{
+    width: 100%;
+    justify-content: space-between;
+
+
+    .icon{
+        font-size:20px;
+        margin: 0 5px;
+        color: var(--whiteColor);
+        font-weight: 600;
+        &:hover{
+            color: var(--PrimaryColor);
+        }
+    }
+}}
+
+.descriptionContainer {
+    background-color: #c5d8e0;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+  }
+
+.description {
+    font-size: 1rem; 
+    color: #fff6f6; 
+    margin-top: 0rem; 
+  }
+
+.file-upload-container {
+    padding: 1rem;
+    background-color: #f8f9fa; /* Gris clair pour le fond */
+    border-radius: 6px; /* Bords arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Effet d'ombre pour la profondeur */
+  }
+  
+  .file-upload-form {
+    display: flex;
+    flex-direction: column; /* Colonne pour que le label soit au-dessus du bouton */
+    align-items:flex-start;
+  }
+
+  .custom-file-label {
+    color: #007bff; /* Bleu moderne */
+    cursor:pointer; /* Indique que c'est cliquable */
+    margin-bottom: 1rem; /* Espacement entre le label et le bouton */
+  }
+  .custom-file-label:hover{
+    text-decoration: underline;
+    border: 2px;
+  }
+
+  .upload-button {
+    background-color:var(--gradientColor); /* Vert pour le bouton */
+    color: white; /* Couleur du texte */
+    padding: 0.5rem 1rem; /* Padding interne */
+    border: none; /* Supprime les bordures */
+    border-radius: 6px; /* Bords arrondis */
+    cursor: pointer; /* Curseur de clic */
+    transition: background-color 0.3s ease; /* Effet de transition */
+    width: 200px;
+  }
+  
+  .upload-button:hover {
+    background-color: #473c81; /* Changement de couleur au survol */
+  }
+  
+  .file-details {
+    margin-top: 1rem; /* Espacement entre le bouton et les détails du fichier */
+  }
+  
+  .file-details p {
+    margin: 0.2rem 0; /* Espacement entre les lignes */
+  }
+  .icon{
+    font-size:17px;
+    margin: 0 7px;
+    color: var(--whiteColor);
+    font-weight: 600;
+    &:hover{
+        color: var(--PrimaryColor);
+    }}

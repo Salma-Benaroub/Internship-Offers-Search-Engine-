@@ -1,0 +1,186 @@
+/* src/components/Home.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+.hh{
+  margin-top: 90px;
+
+}
+
+.home-containe {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: hsl(199,100%,33%);
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  transition: width 0.3s;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.sidebar ul {  
+    margin-top: 100px;
+    font-size: 18px;
+}
+.sidebar.open .sidebar-menu li a {
+  display: inline;
+ 
+}
+
+.sidebar.closed .sidebar-menu li a {
+  display: none;
+}
+
+.sidebar.closed .sidebar-menu li {
+  justify-content: center;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  font-size: 1rem;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.sidebar-menu li a:hover {
+  text-decoration: underline;
+}
+
+.sidebar-menu li svg {
+  font-size: 1.5rem;
+}
+
+.home {
+  margin-left: 270px; /* Space for the sidebar */
+  padding: 20px;
+  max-width: calc(100% - 270px);
+  transition: margin-left 0.3s, max-width 0.3s;
+}
+
+.sidebar.closed + .home {
+  margin-left: 80px;
+  max-width: calc(100% - 80px);
+}
+
+
+
+.category {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category h2 {
+  border-bottom: 2px solid #0073e6;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #0073e6;
+}
+
+.offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.offer {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.offer h3 {
+  font-size: 20px;
+  margin-top: 0;
+  color: #2f78c0;
+}
+
+.offer p {
+  color: #555;
+  flex-grow: 1;
+}
+
+.offer a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f7f9fb;
+  background-color:  hsl(199,100%,33%);
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #0073e6;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.offer a:hover {
+  background-color: #0073e6;
+  color: white;
+}
+
+.offer:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0073e6;
+  color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
