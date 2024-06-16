@@ -18,3 +18,25 @@ An intelligent internship search engine for students seeking internship opportun
     ```bash
     npm install 
       
+## Technologies Utilisées
+
+### Frontend
+- **React**: Framework JavaScript pour la construction de l'interface utilisateur.
+- **HTML/CSS**: Langages de base pour la structure et le style de l'application web.
+
+### Backend
+- **Flask**: Framework web Python utilisé pour construire l'API backend de l'application.
+
+### Base de Données
+- **MongoDB**: Base de données NoSQL utilisée pour stocker et gérer les données des offres de stages.
+
+### Machine Learning
+- **Algorithmes de Machine Learning**: Utilisés pour améliorer la pertinence des recommandations d'offres de stages basées sur les préférences des utilisateurs (le cas échéant).
+
+### Outils Additionnels
+- **npm/yarn**: Outils de gestion de paquets JavaScript utilisés pour installer et gérer les dépendances frontend.
+- **Python Virtual Environment**: Utilisé pour isoler les dépendances Python du projet avec `venv`.
+
+### Autres Technologies
+- **Git**: Système de contrôle de version pour la gestion du code source.
+- **REST API**: Architecture utilisée pour communiquer entre le frontend et le backend de manière efficace.
