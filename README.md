@@ -6,7 +6,7 @@ An intelligent internship search engine for students seeking internship opportun
 ## Useful  commands :
  1. Go to the application folder:
    ```bash
-   cd Internship Offers Search Engine
+  cd Internship Offers Search Engine
 
  2. Create virtual environments for the app:
    ```bash
