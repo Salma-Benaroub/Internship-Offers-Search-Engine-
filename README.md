@@ -6,9 +6,9 @@ An intelligent internship search engine for students seeking internship opportun
    cd Internship Offers Search Engine
 2. Create virtual environments for the app:
   ```bash
-     python -m venv .venv
+      python -m venv .venv
      .venv\scripts\activate
 3. Install the dependencies:
    ```bash
-      npm install 
+         npm install 
       
