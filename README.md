@@ -6,18 +6,15 @@ An intelligent internship search engine for students seeking internship opportun
 ## Useful  commands :
 
  1. Go to the application folder:
-    
-   ```bash
-   cd Internship Offers Search Engine
+     ```bash
+     cd Internship Offers Search Engine
 
  2. Create virtual environments for the app:
-
-   ```bash
-   python -m venv .venv
-   .venv\scripts\activate
+    ```bash
+    python -m venv .venv
+    .venv\scripts\activate
 
  3. Install the dependencies:
-
-   ```bash
-   npm install 
+    ```bash
+    npm install 
       
